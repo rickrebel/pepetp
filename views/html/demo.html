@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<title>CÉDULA DE INSCRIPCIÓN</title>
+	</head>
+	<body>
+		<div id="titleBody">
+			<h2>Cédula de Identificación de Interesados</h2>
+			<h3>Estrategia de Inclusión Productiva.</h3>
+		</div>
+		<br>
+		<br>
+		<div>
+			<div class="tituloSeccionMain">
+				<span>Datos del levantamiento</span>
+			</div>
+			<div class="contentDiv">
+				<table>
+					<tbody>
+						<tr>
+							<td>Fecha del levantamiento:</td>
+							<td><input type="date"></td>
+						</tr>
+						<tr>
+							<td>Clave Promotor:</td>
+							<td><input type="number"></td>
+						</tr>
+						<tr>
+							<td>Nombre del entrevistador:</td>
+							<td><input type="text" disabled></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div>
+			<div class="tituloSeccionMain">
+				<span>Identificacion geográfica</span>
+			</div>
+			<div class="contentDiv">
+				<table>
+					<tbody>
+						<tr>
+							<td>Entidad Federativa:</td>
+							<td>
+								<select>
+									<option value=0>Seleccione</option>	
+								</select>
+							</td>
+							<td>Clave: <input type="text" maxlength=2 disabled></td>
+						</tr>
+						<tr>
+							<td>Territorio:</td>
+							<td>
+								<select> 
+									<option value=0>Seleccione</option>
+								</select>
+							</td>
+							<td>Clave: <input type="text" disabled></td>
+						</tr>
+						<tr>
+							<td>Municipio:</td>
+							<td>
+								<select>
+									<option value=0>Seleccione</option>
+								</select>
+							</td>
+							<td>Clave: <input type="text" disabled></td>
+						</tr>
+						<tr>
+							<td>Localidad:</td>
+							<td>
+								<select>
+									<option value=0>Seleccione</option>
+								</select>								
+							</td>
+							<td>Clave: <input type="text" disabled></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div>
+			<div class="tituloSeccionMain">
+				<span>I. Datos de la persona</span>
+			</div>
+			<div class="contentDiv">
+				<table>
+					<tbody>
+						<tr>
+							<td colspan=2>¿Es PROSPERA?</td>
+						</tr>
+						<tr>
+							<td colspan=2><input type="radio" name="esprospera" value=1>SI <input type="radio" name="esprospera" value=2>NO</td>
+						</tr>
+						<tr>
+							<td colspan=2>FAMILIA ID (PROSPERA):</td>
+						</tr>
+						<tr>
+							
+							<td colspan=2><input type="text"></td>
+							
+						</tr>
+
+						<tr style="border-top: 2px solid black;">
+							<td>Nombre(s):</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Primer Apellido:</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Segundo Apellido:</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>CURP:</td>
+							<td><input type="´text" maxlength="18"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div>
+				<div class="tituloSeccion">
+					<span>Documento oficial que presenta el informante para acreditar su identidad</span>
+				</div>
+				<div class="contentDiv">
+					<input type="radio" name="documentooficial" value=1>
+					01 Credencial para votar vigente
+					<br>
+					<input type="radio" name="documentooficial" value=2>02 Cartilla del Servicio Militar Nacional  
+					<br>
+					<input type="radio" name="documentooficial" value=3>03 pasaporte Vigente  
+					<br>
+					<input type="radio" name="documentooficial" value=4>04 Otra 
+					<table>
+						<tbody>
+							<tr>
+								<td><b>Folio de la Identificacion</b>:</td>
+								<td><input type="text"></td>
+							</tr>
+							<tr>
+								<td>Dónde ubicarlo:</td>
+								<td><textarea></textarea></td>
+							</tr>
+							<tr>
+								<td>Teléfono:</td>
+								<td><input type="text"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="tituloSeccionMain">
+				<span>II. Uso de tiempo y decisión</span>
+			</div>
+			<div class="contentDiv">
+				<div>
+					<table>
+						<thead>
+							<tr>
+								<td colspan=2>1. A la semana ¿Cuántas horas le dedicas:</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Al cuidado de tu familia:</td>
+								<td><input type="text" class="inputReducido" maxlength=2></td>
+							</tr>
+							<tr>
+								<td>Pata tí misma(o):</td>
+								<td><input type="text" class="inputReducido" maxlength=2></td>
+							</tr>
+							<tr>
+								<td>A las actividades de tu hogar:</td>
+								<td><input type="text" class="inputReducido" maxlength=2></td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<br>
+				<div>
+					<table>
+						<thead>
+							<tr>
+								<td colspan=5>
+									2. ¿Qué tanto decides sobre..
+								</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Si puede trabajar</td>
+								<td><input type="radio" name="decidetrabajo" value=1>01 Nada</td>
+								<td><input type="radio" name="decidetrabajo" value=2>02 Escasamente</td>
+								<td><input type="radio" name="decidetrabajo" value=3>03 Regular</td>
+								<td><input type="radio" name="decidetrabajo" value=4>Mucho</td>
+							</tr>
+							<tr>
+								<td>Cómo manejar tu tiempo cada día</td>
+								<td><input type="radio" name="decidetiempo" value=1>01 Nada</td>
+								<td><input type="radio" name="decidetiempo" value=2>02 Escasamente</td>
+								<td><input type="radio" name="decidetiempo" value=3>03 Regular</td>
+								<td><input type="radio" name="decidetiempo" value=4>Mucho</td>
+							</tr>
+							<tr>
+								<td>Cómo se maneja el dinero en tu hogar</td>
+								<td><input type="radio" name="decidetiempo" value=1>01 Nada</td>
+								<td><input type="radio" name="decidetiempo" value=2>02 Escasamente</td>
+								<td><input type="radio" name="decidetiempo" value=3>03 Regular</td>
+								<td><input type="radio" name="decidetiempo" value=4>Mucho</td>
+							</tr>
+						</tbody>
+					</table>    
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="tituloSeccionMain">
+				<span>III. Empleo</span>
+			</div>
+			<div class="contentDiv">
+				<div>
+					<table>
+						<tbody>
+							<tr>
+								<td>3. Durante el mes pasado, ¿Usted trabajó?</td>
+							</tr>
+							<tr>
+								<td><input type="radio" name="ustedtrabajo" value=1>01 SI <input type="radio" name="ustedtrabajo" value=2>02 NO</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<div>
+					<table>
+						<thead>
+							<tr>
+								<td>4. Independientemente de lo que me acaba de decir, ¿le dedicó el mes pasado al menos una hora a...</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="radio" name="confirmacionempleo" value=1>01 ¿Realizar alguna actividad para obtener ingresos?  <input type="radio" name="confirmacionempleo" value=2>02 Ayudar en las tierras o en el negocio de un familiar o de otra persona  <input type="radio" name="confirmacionempleo" value=3>03 No trabajó el mes pasado</td>
+							</tr>
+						</tbody>
+					</table>
+					
+				</div>
+				<br>
+				<div>
+					<table>
+						<thead>
+							<tr>
+								<td colspan=2>5. En su trabajo principal del mes pasado, usted se desempeñó como:</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<select>
+										<option disabled selected value>---Seleccione---</option>
+										<option value=1>01 Ayudante</option>
+										<option value=2>02 Trabajador doméstico</option>
+										<option value=3>03 Como empleado</option>
+										<option value=4>04 Jornalero</option>
+										<option value=5>05 Obrero</option>
+										<option value=6>06 Patrón o empleador de un negocio</option>
+										<option value=7>07 Trabajafor por cuenta propia</option>
+										<option value=8>08 Otro</option>
+										<option value=9>09 No sabe/No responde</option>
+									</select>
+								</td>
+							</tr>
+						</tbody>
+					</table>   
+				</div>
+				<br>
+				<div>
+					<table>
+						<tbody>
+							<tr>
+								<td>6. ¿A qué giro se dedica la empresa, negocio o constitución en la que trabajo o ayudó?</td>
+								<td>
+									<select>
+										<option disabled selected value>---Seleccione---</option>
+										<option value=1>01 Agricultura</option>
+										<option value=2>02 Ganadería</option>
+										<option value=3>03 Industria</option>
+										<option value=4>04 Servicios</option>
+										<option value=5>05 Comercio</option>
+									</select>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<div>
+					<table>
+						<tbody>
+							<tr>
+								<td>7. Amplie los detalles de la empresa o actividad</td>
+								<td>
+									<select>
+										<option disabled selected value>---Seleccione---</option>
+										<option value=1> 01 Cultivo de frijol</option>
+										<option value=2> 02 Cultivo de maíz</option>
+										<option value=3> 03 Cultivo de otras semillas</option>
+										<option value=4> 04 Cultivo de cereales</option>
+										<option value=5> 05 Cultivo de hortalizas</option>
+										<option value=6> 06 Cultivo de frutales cítricos</option>
+										<option value=7> 07 Cultivo de frutales no cítricos y nueces</option>
+										<option value=8> 08 Floricultura y plantas</option>
+										<option value=9> 09 Otros cultivos</option>
+										<option value=10> 10 Bovinos</option>
+										<option value=11> 11 Porcinos</option>
+										<option value=12> 12 Ovinos</option>
+										<option value=13> 13 Caprinos</option>
+										<option value=14> 14 Avícola</option>
+										<option value=15> 15 Acuicultura</option>
+										<option value=16> 16 Apicultura</option>
+										<option value=17> 17 Explotación de Otros animales</option>
+										<option value=18> 18 Silvicultura</option>
+										<option value=19> 19 Caza y Pesca</option>
+										<option value=20> 20 Servicios agricultura y ganadería</option>
+										<option value=21> 21 Elaboración de alimentos</option>
+										<option value=22> 22 Café y té</option>
+										<option value=23> 23 Artesanías textiles</option>
+										<option value=24> 24 Otras artesanías</option>
+										<option value=25> 25 Construcción</option>
+										<option value=26> 26 Minería y energía</option>
+										<option value=27> 27 Industria de transformación</option>
+										<option value=28> 28 Industrias manufactureras</option>
+										<option value=29> 29 Transporte y almacenamiento</option>
+										<option value=30> 30 Servicios de alojamiento</option>
+										<option value=31> 31 Servicios de restaurantes</option>
+										<option value=32> 32 Otros Servicios</option>
+										<option value=33> 33 Gobierno</option>
+										<option value=34> 34 Comercio</option>
+									</select>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="tituloSeccionMain">
+				<span>IV. Actividad Secundaria</span>
+			</div>
+			<div class="contentDiv">
+				<div>
+					<table>
+						<tbody>
+							<tr>
+								<td>8. Además del trabajo que me acaba de mencionar, ¿Alguna otra actividad productiva que le genere ingresos?</td>
+							</tr>
+							<tr>
+								<td><input type="radio" name="trabajosecundario" value=1>01 SI <input type="radio" name="trabajosecundario" value=2>02 NO</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<div>
+					<table>
+						<tbody>
+							<tr>
+								<td>9. ¿A qué giro se dedica la empresa, negocio de esa actividad productiva? </td>
+								<td>
+									<select>
+										<option disabled selected value>---Seleccione---</option>
+										<option value=1>01 Agricultura</option>
+										<option value=2>02 Ganadería</option>
+										<option value=3>03 Industria</option>
+										<option value=4>04 Servicios</option>
+										<option value=5>05 Comercio</option>
+									</select>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<div>
+					<table>
+						<thead>
+							<tr>
+								<td>10. Amplie los detalles de la empresa o actividad</td>
+								<td>
+									<select>
+										<option value=0>Seleccione</option>
+									</select>
+								</td>
+							</tr>
+						</thead>
+					</table>
+				</div>
+				<br>
+				<div>
+					<table>
+						<thead>
+							<tr>
+								<td><b>Para quellos que no realizan una actividad productiva</b></td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>11. En los últimos 5 años tuvo algún negocio o realizó alguna actividad productiva que le generara ingresos, como agricultura, cría de animales o producción de algún producto? </td>
+							</tr>
+							<tr>
+								<td><input type="radio" name="experienciaproductiva" value=1>SI <input type="radio" name="experienciaproductiva" value=2>NO</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<div>
+					<table>
+						<tbody>
+							<tr>
+								<td>12. ¿A qué giro se dedica la empresa, negocio de esa actividad productiva? </td>
+								<td>
+									<select>
+										<option disabled selected value>---Seleccione---</option>
+										<option value=1>01 Agricultura</option>
+										<option value=2>02 Ganadería</option>
+										<option value=3>03 Industria</option>
+										<option value=4>04 Servicios</option>
+										<option value=5>05 Comercio</option>
+									</select>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>	
+				<br>
+				<div>
+					<table>
+						<tbody>
+							<tr>
+								<td>13. Amplie los detalles de la empresa o actividad</td>
+								<td>
+									<select>
+										<option disabled selected value>---Seleccione---</option>
+										<option value=1> 01 Cultivo de frijol</option>
+										<option value=2> 02 Cultivo de maíz</option>
+										<option value=3> 03 Cultivo de otras semillas</option>
+										<option value=4> 04 Cultivo de cereales</option>
+										<option value=5> 05 Cultivo de hortalizas</option>
+										<option value=6> 06 Cultivo de frutales cítricos</option>
+										<option value=7> 07 Cultivo de frutales no cítricos y nueces</option>
+										<option value=8> 08 Floricultura y plantas</option>
+										<option value=9> 09 Otros cultivos</option>
+										<option value=10> 10 Bovinos</option>
+										<option value=11> 11 Porcinos</option>
+										<option value=12> 12 Ovinos</option>
+										<option value=13> 13 Caprinos</option>
+										<option value=14> 14 Avícola</option>
+										<option value=15> 15 Acuicultura</option>
+										<option value=16> 16 Apicultura</option>
+										<option value=17> 17 Explotación de Otros animales</option>
+										<option value=18> 18 Silvicultura</option>
+										<option value=19> 19 Caza y Pesca</option>
+										<option value=20> 20 Servicios agricultura y ganadería</option>
+										<option value=21> 21 Elaboración de alimentos</option>
+										<option value=22> 22 Café y té</option>
+										<option value=23> 23 Artesanías textiles</option>
+										<option value=24> 24 Otras artesanías</option>
+										<option value=25> 25 Construcción</option>
+										<option value=26> 26 Minería y energía</option>
+										<option value=27> 27 Industria de transformación</option>
+										<option value=28> 28 Industrias manufactureras</option>
+										<option value=29> 29 Transporte y almacenamiento</option>
+										<option value=30> 30 Servicios de alojamiento</option>
+										<option value=31> 31 Servicios de restaurantes</option>
+										<option value=32> 32 Otros Servicios</option>
+										<option value=33> 33 Gobierno</option>
+										<option value=34> 34 Comercio</option>
+									</select>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<div>
+					<table>
+						<thead>
+							<tr>
+								<td>14. Le gustaría fortalecer por medio de su participación activa...</td>
+							</tr>
+							<tr>
+								<td>(Recuerde en cada caso la actividad que el entrevistado menciono)</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="radio" name="fortalecimiento_interes" value=1>Su actividad principal</td>
+							</tr>
+							<tr>
+								<td><input type="radio" name="fortalecimiento_interes" value=2>Su actividad productiva secundaria</td>
+							</tr>
+							<tr>
+								<td><input type="radio" name="fortalecimiento_interes" value=3>Actividad con esperiencia</td>
+							</tr>
+							<tr>
+								<td><input type="radio" name="fortalecimiento_interes" value=4>Comenzar un nuevo proyecto distinto</td>
+							</tr>
+							<tr>
+								<td><input type="radio" name="fortalecimiento_interes" value=5>No le interesa fortalecer alguna actividad</td>
+							</tr>
+						</tbody>
+					</table>      
+				</div>
+				<br>
+				<div>
+					<table>
+						<tbody>
+							<tr>
+								<td>15. ¿A qué giro se dedicaría en le nuevo proyecto que se desea realizar? </td>
+								<td>
+									<select>
+										<option disabled selected value>---Seleccione---</option>
+										<option value=1>01 Agricultura</option>
+										<option value=2>02 Ganadería</option>
+										<option value=3>03 Industria</option>
+										<option value=4>04 Servicios</option>
+										<option value=5>05 Comercio</option>
+									</select>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<div>
+					<table>
+						<tbody>
+							<tr>
+								<td>16. Amplie los detalles de la empresa o actividad</td>
+								<td>
+									<select>
+										<option disabled selected value>---Seleccione---</option>
+										<option value=1> 01 Cultivo de frijol</option>
+										<option value=2> 02 Cultivo de maíz</option>
+										<option value=3> 03 Cultivo de otras semillas</option>
+										<option value=4> 04 Cultivo de cereales</option>
+										<option value=5> 05 Cultivo de hortalizas</option>
+										<option value=6> 06 Cultivo de frutales cítricos</option>
+										<option value=7> 07 Cultivo de frutales no cítricos y nueces</option>
+										<option value=8> 08 Floricultura y plantas</option>
+										<option value=9> 09 Otros cultivos</option>
+										<option value=10> 10 Bovinos</option>
+										<option value=11> 11 Porcinos</option>
+										<option value=12> 12 Ovinos</option>
+										<option value=13> 13 Caprinos</option>
+										<option value=14> 14 Avícola</option>
+										<option value=15> 15 Acuicultura</option>
+										<option value=16> 16 Apicultura</option>
+										<option value=17> 17 Explotación de Otros animales</option>
+										<option value=18> 18 Silvicultura</option>
+										<option value=19> 19 Caza y Pesca</option>
+										<option value=20> 20 Servicios agricultura y ganadería</option>
+										<option value=21> 21 Elaboración de alimentos</option>
+										<option value=22> 22 Café y té</option>
+										<option value=23> 23 Artesanías textiles</option>
+										<option value=24> 24 Otras artesanías</option>
+										<option value=25> 25 Construcción</option>
+										<option value=26> 26 Minería y energía</option>
+										<option value=27> 27 Industria de transformación</option>
+										<option value=28> 28 Industrias manufactureras</option>
+										<option value=29> 29 Transporte y almacenamiento</option>
+										<option value=30> 30 Servicios de alojamiento</option>
+										<option value=31> 31 Servicios de restaurantes</option>
+										<option value=32> 32 Otros Servicios</option>
+										<option value=33> 33 Gobierno</option>
+										<option value=34> 34 Comercio</option>
+									</select>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<div>
+					<table style="border: 1px solid black;">
+						<thead>
+							<tr>
+								<th >17. Cuenta con las siguientes capacidades para emnpezar o fortalecer su actividad</th>
+								<th > <b>|01 SÍ</b></th>
+								<th > <b>|02 NO</b></th>
+								<th > <b>|03 NO APLICA|</b></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Conocimientos técnicos:</td>
+								<td><input type="radio" name="conocimientos" value="1"></td>
+								<td><input type="radio" name="conocimientos" value="2"></td>
+								<td><input type="radio" name="conocimientos" value="3"></td>
+
+							</tr>
+							<tr>
+								<td>Terreno Instalaciones o local:</td>
+								<td><input type="text" class="inputReducido" maxlength=2></td>
+							</tr>
+							<tr>
+								<td>Insumos, materia prima y/o animales:</td>
+								<td><input type="text" class="inputReducido" maxlength=2></td>
+							</tr>
+							<tr>
+								<td>Equipo y/o herramienta:</td>
+								<td><input type="text" class="inputReducido" maxlength=2></td>
+							</tr>
+							<tr>
+								<td>Mobiliario:</td>
+								<td><input type="text" class="inputReducido" maxlength=2></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<div>
+					<table>
+						<tbody>
+							<tr>
+								<td>18. Ha recibido apoyo para alguna actividad productiva:</td>
+							</tr>
+							<tr>
+								<td><input type="radio" name="apoyorecibido" value=1>SI <input type="radio" name="apoyorecibido" value=2>NO</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<div>
+					<table>
+						<tbody>
+							<tr>
+								<td>19. ¿Qué instancia le proporcionó el apoyo para su actividad productiva?</td>
+								<td>
+									<select>
+										<option value=0>Seleccione</option>
+										<option value=1>Gobierno</option>
+										<option value=2>Social-Solidarias</option>
+										<option value=3>Privada</option>
+									</select>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<div>
+					<table>
+						<tbody>
+							<tr>
+								<td>20. ¿De qué programa recibió apoyo? Categorice según catálogo de programas </td>
+								<td>
+									<select>
+										<option value=0>Seleccione</option>
+									</select>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<div>
+					<table>
+						<tbody>
+							<tr>
+								<td>21. ¿En qué año recibió el último apoyo para su actividad productiva?</td>
+								<td><input type="text" maxlength="4"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<div>
+					<table>
+						<tbody>
+							<tr>
+								<td>22. ¿El apoyo fue para el proyecto que desea fortalecer?</td>
+							</tr>
+							<tr>
+								<td><input type="radio" name="apoyoalinteres" value=1>SI <input type="radio" name="apoyoalinteres" value=2>NO</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<div>
+					<table>
+						<tbody>
+							<tr>
+								<td>23. ¿Has recibido algún crédito para la actividad productiva?</td>
+								<td><input type="radio" name="creditorecibido" value=1>SI <input type="radio" name="creditorecibido" value=2>NO</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<div>
+					<table>
+						<tbody>
+							<tr>
+								<td>24. ¿Qué instancia le proporcionó el crédito para su actividad productiva?</td>
+								<td>
+									<select>
+										<option value=0>Seleccione</option>
+										<option value=1>Gobierno</option>
+										<option value=2>Social-Solidarias</option>
+										<option value=3>Privada</option>
+									</select>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<div>
+					<table>
+						<tbody>
+							<tr>
+								<td>25. ¿Cuál es la situación del pago de su crédito? </td>
+								<td>
+									<select>
+										<option value=0>Seleccione</option>
+										<option value=1>Pagada</option>
+										<option value=2>Con pagos atrasados</option>
+										<option value=3>En proceso de pago</option>
+									</select>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<div>
+					<table>
+						<thead>
+							<tr>
+								<td>26. ¿Ha participado en organizaciones productivas de...</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>De gobierno:</td>
+								<td><input type="radio" name="organizacionesgobierno" value=1>SI <input type="radio" name="organizacionesgobierno" value=2>NO</td>
+							</tr>
+							<tr>
+								<td>Sociales:</td>	
+								<td><input type="radio" name="organizacionessociales" value=1>SI <input type="radio" name="organizacionessociales" value=2>NO</td>
+							</tr>
+							<tr>
+								<td>Privadas:</td>	
+								<td><input type="radio" name="organizacionesprivadas" value=1>SI <input type="radio" name="organizacionesprivadas" value=2>NO</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<div>
+					<table>
+						<thead>
+							<tr>
+								<td>27. cuenta ustede con alguna experiencia organizativa en lo...</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Educativo:</td>
+								<td><input type="radio" name="organizacioneseducativo" value=1>SI <input type="radio" name="organizacioneseducativo" value=2>NO</td>
+							</tr>
+							<tr>
+								<td>Social:</td>
+								<td><input type="radio" name="organizacionessocial" value=1>SI <input type="radio" name="organizacionessocial" value=2>NO</td>
+							</tr>
+							<tr>
+								<td>Religioso:</td>
+								<td><input type="radio" name="organizacionesreligioso" value=1>SI <input type="radio" name="organizacionesreligioso" value=2>NO</td>
+							</tr>
+							<tr>
+								<td>político:</td>
+								<td><input type="radio" name="organizacionespolitico" value=1>SI <input type="radio" name="organizacionespolitico" value=2>NO</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<div class="contentDiv">
+				 	<table>
+				 		<thead>
+				 			<tr>
+				 				<td colspan=4>28.¿Me podría contar un poco más acerca de su experiencia oprganizativa?</td>
+				 			</tr>
+				 			<tr>
+				 				<td colspan=4>Categorice las respuestas que vaya identificando <b>|01 Educativo| |Social 02| |Religioso 03| |Productivo 04|</b></td>
+				 			</tr>
+				 			<tr>
+				 				<td></td>
+				 				<td>Código</td>
+				 				<td>Nombre de la Organización</td>
+				 				<td>Responsabilidad</td>
+				 			</tr>
+				 		</thead>
+				 		<tbody>
+				 			<tr>
+				 				<td>Organización 1</td>
+				 				<td><input type="text" maxlength=2 class="pregunta28 inputReducido"></td>
+				 				<td><textarea class="pregunta28"></textarea></td>
+				 				<td><textarea class="pregunta28"></textarea></td>
+				 			</tr>
+				 			<tr>
+				 				<td>Organización 2</td>
+				 				<td><input type="text" maxlength=2 class="pregunta28 inputReducido"></td>
+				 				<td><textarea class="pregunta28"></textarea></td>
+				 				<td><textarea class="pregunta28"></textarea></td>
+				 			</tr>
+				 			<tr>
+				 				<td>Organización 3</td>
+				 				<td><input type="text" maxlength=2 class="pregunta28 inputReducido"></td>
+				 				<td><textarea class="pregunta28"></textarea></td>
+				 				<td><textarea class="pregunta28"></textarea></td>
+				 			</tr>
+				 		</tbody>
+				 	</table>
+				 </div>
+			</div>
+		</div>
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	</body>
+</html>

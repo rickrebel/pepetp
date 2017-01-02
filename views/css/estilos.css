@@ -1,0 +1,25 @@
+#titleBody{
+	text-align: center;
+}
+
+.tituloSeccionMain{
+	background-color: #BDBDBD;
+	text-align: center;
+}
+
+.tituloSeccion{
+	background-color: #E6E6E6;
+	text-align: center;
+}
+
+.contentDiv{
+	text-align: center;
+}
+
+.inputReducido{
+	width:15px;
+}
+
+table{
+	margin: 0 auto;
+}
