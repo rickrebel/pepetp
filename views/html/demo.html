@@ -93,7 +93,10 @@
 							<td colspan=2>¿Es PROSPERA?</td>
 						</tr>
 						<tr>
-							<td colspan=2><input type="radio" name="esprospera" value=1>SI <input type="radio" name="esprospera" value=2>NO</td>
+							<td colspan=2>
+								<input type="radio" name="esprospera" value=1>01 Sí 
+								<input type="radio" name="esprospera" value=2>02 No
+							</td>
 						</tr>
 						<tr>
 							<td colspan=2>FAMILIA ID (PROSPERA):</td>
@@ -131,16 +134,16 @@
 					<input type="radio" name="documentooficial" value=1>
 					01 Credencial para votar vigente
 					<br>
-					<input type="radio" name="documentooficial" value=2>02 Cartilla del Servicio Militar Nacional  
+					<input type="radio" name="documentooficial" value=2>02 Cartilla del Servicio Militar Nacional
 					<br>
-					<input type="radio" name="documentooficial" value=3>03 pasaporte Vigente  
+					<input type="radio" name="documentooficial" value=3>03 Pasaporte Vigente  
 					<br>
 					<input type="radio" name="documentooficial" value=4>04 Otra 
 					<table>
 						<tbody>
 							<tr>
 								<td><b>Folio de la Identificacion</b>:</td>
-								<td><input type="text"></td>
+								<td><input type="text" maxlength="25"></td>
 							</tr>
 							<tr>
 								<td>Dónde ubicarlo:</td>
@@ -148,7 +151,7 @@
 							</tr>
 							<tr>
 								<td>Teléfono:</td>
-								<td><input type="text"></td>
+								<td><input type="text" maxlength="20"></td>
 							</tr>
 						</tbody>
 					</table>
@@ -249,7 +252,12 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td><input type="radio" name="confirmacionempleo" value=1>01 ¿Realizar alguna actividad para obtener ingresos?  <input type="radio" name="confirmacionempleo" value=2>02 Ayudar en las tierras o en el negocio de un familiar o de otra persona  <input type="radio" name="confirmacionempleo" value=3>03 No trabajó el mes pasado</td>
+								<td>
+									<input type="radio" name="confirmacionempleo" value=1>01 ¿Realizar alguna actividad para obtener ingresos?  
+									<br>
+									<input type="radio" name="confirmacionempleo" value=2>02 Ayudar en las tierras o en el negocio de un familiar o de otra persona 
+									<br>
+									<input type="radio" name="confirmacionempleo" value=3>03 No trabajó el mes pasado</td>
 							</tr>
 						</tbody>
 					</table>
@@ -366,7 +374,7 @@
 								<td>8. Además del trabajo que me acaba de mencionar, ¿Alguna otra actividad productiva que le genere ingresos?</td>
 							</tr>
 							<tr>
-								<td><input type="radio" name="trabajosecundario" value=1>01 SI <input type="radio" name="trabajosecundario" value=2>02 NO</td>
+								<td><input type="radio" name="trabajosecundario" value=1>01 Sí <input type="radio" name="trabajosecundario" value=2>02 No</td>
 							</tr>
 						</tbody>
 					</table>
@@ -398,8 +406,42 @@
 							<tr>
 								<td>10. Amplie los detalles de la empresa o actividad</td>
 								<td>
-									<select>
-										<option value=0>Seleccione</option>
+<select>
+										<option disabled selected value>---Seleccione---</option>
+										<option value=1> 01 Cultivo de frijol</option>
+										<option value=2> 02 Cultivo de maíz</option>
+										<option value=3> 03 Cultivo de otras semillas</option>
+										<option value=4> 04 Cultivo de cereales</option>
+										<option value=5> 05 Cultivo de hortalizas</option>
+										<option value=6> 06 Cultivo de frutales cítricos</option>
+										<option value=7> 07 Cultivo de frutales no cítricos y nueces</option>
+										<option value=8> 08 Floricultura y plantas</option>
+										<option value=9> 09 Otros cultivos</option>
+										<option value=10> 10 Bovinos</option>
+										<option value=11> 11 Porcinos</option>
+										<option value=12> 12 Ovinos</option>
+										<option value=13> 13 Caprinos</option>
+										<option value=14> 14 Avícola</option>
+										<option value=15> 15 Acuicultura</option>
+										<option value=16> 16 Apicultura</option>
+										<option value=17> 17 Explotación de Otros animales</option>
+										<option value=18> 18 Silvicultura</option>
+										<option value=19> 19 Caza y Pesca</option>
+										<option value=20> 20 Servicios agricultura y ganadería</option>
+										<option value=21> 21 Elaboración de alimentos</option>
+										<option value=22> 22 Café y té</option>
+										<option value=23> 23 Artesanías textiles</option>
+										<option value=24> 24 Otras artesanías</option>
+										<option value=25> 25 Construcción</option>
+										<option value=26> 26 Minería y energía</option>
+										<option value=27> 27 Industria de transformación</option>
+										<option value=28> 28 Industrias manufactureras</option>
+										<option value=29> 29 Transporte y almacenamiento</option>
+										<option value=30> 30 Servicios de alojamiento</option>
+										<option value=31> 31 Servicios de restaurantes</option>
+										<option value=32> 32 Otros Servicios</option>
+										<option value=33> 33 Gobierno</option>
+										<option value=34> 34 Comercio</option>
 									</select>
 								</td>
 							</tr>
@@ -419,7 +461,7 @@
 								<td>11. En los últimos 5 años tuvo algún negocio o realizó alguna actividad productiva que le generara ingresos, como agricultura, cría de animales o producción de algún producto? </td>
 							</tr>
 							<tr>
-								<td><input type="radio" name="experienciaproductiva" value=1>SI <input type="radio" name="experienciaproductiva" value=2>NO</td>
+								<td><input type="radio" name="experienciaproductiva" value=1>01 Sí <input type="radio" name="experienciaproductiva" value=2>02 No</td>
 							</tr>
 						</tbody>
 					</table>
@@ -506,19 +548,19 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td><input type="radio" name="fortalecimiento_interes" value=1>Su actividad principal</td>
+								<td><input type="radio" name="fortalecimiento_interes" value=1>01 Su actividad principal</td>
 							</tr>
 							<tr>
-								<td><input type="radio" name="fortalecimiento_interes" value=2>Su actividad productiva secundaria</td>
+								<td><input type="radio" name="fortalecimiento_interes" value=2>02 Su actividad productiva secundaria</td>
 							</tr>
 							<tr>
-								<td><input type="radio" name="fortalecimiento_interes" value=3>Actividad con esperiencia</td>
+								<td><input type="radio" name="fortalecimiento_interes" value=3>03 Actividad con esperiencia</td>
 							</tr>
 							<tr>
-								<td><input type="radio" name="fortalecimiento_interes" value=4>Comenzar un nuevo proyecto distinto</td>
+								<td><input type="radio" name="fortalecimiento_interes" value=4>04 Comenzar un nuevo proyecto distinto</td>
 							</tr>
 							<tr>
-								<td><input type="radio" name="fortalecimiento_interes" value=5>No le interesa fortalecer alguna actividad</td>
+								<td><input type="radio" name="fortalecimiento_interes" value=5>05 No le interesa fortalecer alguna actividad</td>
 							</tr>
 						</tbody>
 					</table>      
@@ -613,19 +655,28 @@
 							</tr>
 							<tr>
 								<td>Terreno Instalaciones o local:</td>
-								<td><input type="text" class="inputReducido" maxlength=2></td>
+								<td><input type="radio" name="terreno" value="1"></td>
+								<td><input type="radio" name="terreno" value="2"></td>
+								<td><input type="radio" name="terreno" value="3"></td>
+
 							</tr>
 							<tr>
 								<td>Insumos, materia prima y/o animales:</td>
-								<td><input type="text" class="inputReducido" maxlength=2></td>
+								<td><input type="radio" name="insumos" value="1"></td>
+								<td><input type="radio" name="insumos" value="2"></td>
+								<td><input type="radio" name="insumos" value="3"></td>
 							</tr>
 							<tr>
 								<td>Equipo y/o herramienta:</td>
-								<td><input type="text" class="inputReducido" maxlength=2></td>
+								<td><input type="radio" name="equipo" value="1"></td>
+								<td><input type="radio" name="equipo" value="2"></td>
+								<td><input type="radio" name="equipo" value="3"></td>
 							</tr>
 							<tr>
 								<td>Mobiliario:</td>
-								<td><input type="text" class="inputReducido" maxlength=2></td>
+								<td><input type="radio" name="mobiliario" value="1"></td>
+								<td><input type="radio" name="mobiliario" value="2"></td>
+								<td><input type="radio" name="mobiliario" value="3"></td>
 							</tr>
 						</tbody>
 					</table>
@@ -638,7 +689,7 @@
 								<td>18. Ha recibido apoyo para alguna actividad productiva:</td>
 							</tr>
 							<tr>
-								<td><input type="radio" name="apoyorecibido" value=1>SI <input type="radio" name="apoyorecibido" value=2>NO</td>
+								<td><input type="radio" name="apoyorecibido" value=1>Sí <input type="radio" name="apoyorecibido" value=2>No</td>
 							</tr>
 						</tbody>
 					</table>
@@ -652,9 +703,9 @@
 								<td>
 									<select>
 										<option value=0>Seleccione</option>
-										<option value=1>Gobierno</option>
-										<option value=2>Social-Solidarias</option>
-										<option value=3>Privada</option>
+										<option value=1>01 Gobierno</option>
+										<option value=2>02 Social-Solidarias</option>
+										<option value=3>03 Privada</option>
 									</select>
 								</td>
 							</tr>
@@ -669,7 +720,21 @@
 								<td>20. ¿De qué programa recibió apoyo? Categorice según catálogo de programas </td>
 								<td>
 									<select>
-										<option value=0>Seleccione</option>
+										<option disabled selected value>---Seleccione---</option>
+										<option value=1> 01 FAPPA</option>
+										<option value=2> 02 ARRAIGATE</option>
+										<option value=3> 03 CDI (Comisión Nacional Para el Desarrollo de los Pueblos indígenas)</option>
+										<option value=4> 04 PROCODES - SEMARNAT</option>
+										<option value=5> 05 Fomento a la Economía Social (Impulso Productivo</option>
+										<option value=6> 06 FONART</option>
+										<option value=7> 07 INAES - INTEGRA</option>
+										<option value=8> 08 PROMETE</option>
+										<option value=9> 09 SEMARNAT</option>
+										<option value=10> 10 Otro de SAGARPA</option>
+										<option value=11> 11 Otro de SEDESOL</option>
+										<option value=12> 12 Otro Federal</option>
+										<option value=13> 13 Alguno estatal</option>
+										<option value=14> 14 Alguno local</option>
 									</select>
 								</td>
 							</tr>
@@ -682,7 +747,7 @@
 						<tbody>
 							<tr>
 								<td>21. ¿En qué año recibió el último apoyo para su actividad productiva?</td>
-								<td><input type="text" maxlength="4"></td>
+								<td><input type="number" ></td>
 							</tr>
 						</tbody>
 					</table>
@@ -695,7 +760,7 @@
 								<td>22. ¿El apoyo fue para el proyecto que desea fortalecer?</td>
 							</tr>
 							<tr>
-								<td><input type="radio" name="apoyoalinteres" value=1>SI <input type="radio" name="apoyoalinteres" value=2>NO</td>
+								<td><input type="radio" name="apoyoalinteres" value=1>01 Sí <input type="radio" name="apoyoalinteres" value=2>02 No</td>
 							</tr>
 						</tbody>
 					</table>
@@ -706,7 +771,7 @@
 						<tbody>
 							<tr>
 								<td>23. ¿Has recibido algún crédito para la actividad productiva?</td>
-								<td><input type="radio" name="creditorecibido" value=1>SI <input type="radio" name="creditorecibido" value=2>NO</td>
+								<td><input type="radio" name="creditorecibido" value=1>01 Sí <input type="radio" name="creditorecibido" value=2>02 No</td>
 							</tr>
 						</tbody>
 					</table>
@@ -719,10 +784,10 @@
 								<td>24. ¿Qué instancia le proporcionó el crédito para su actividad productiva?</td>
 								<td>
 									<select>
-										<option value=0>Seleccione</option>
-										<option value=1>Gobierno</option>
-										<option value=2>Social-Solidarias</option>
-										<option value=3>Privada</option>
+										<option disabled selected value>---Seleccione---</option>
+										<option value=1>01 Gobierno</option>
+										<option value=2>02 Social-Solidarias</option>
+										<option value=3>03 Privada</option>
 									</select>
 								</td>
 							</tr>
@@ -737,10 +802,10 @@
 								<td>25. ¿Cuál es la situación del pago de su crédito? </td>
 								<td>
 									<select>
-										<option value=0>Seleccione</option>
-										<option value=1>Pagada</option>
-										<option value=2>Con pagos atrasados</option>
-										<option value=3>En proceso de pago</option>
+										<option disabled selected value>---Seleccione---</option>
+										<option value=1>01 Pagada</option>
+										<option value=2>02 Con pagos atrasados</option>
+										<option value=3>03 En proceso de pago</option>
 									</select>
 								</td>
 							</tr>
@@ -758,15 +823,15 @@
 						<tbody>
 							<tr>
 								<td>De gobierno:</td>
-								<td><input type="radio" name="organizacionesgobierno" value=1>SI <input type="radio" name="organizacionesgobierno" value=2>NO</td>
+								<td><input type="radio" name="organizacionesgobierno" value=1>01 Sí <input type="radio" name="organizacionesgobierno" value=2>02 No</td>
 							</tr>
 							<tr>
 								<td>Sociales:</td>	
-								<td><input type="radio" name="organizacionessociales" value=1>SI <input type="radio" name="organizacionessociales" value=2>NO</td>
+								<td><input type="radio" name="organizacionessociales" value=1>Sí <input type="radio" name="organizacionessociales" value=2>No</td>
 							</tr>
 							<tr>
 								<td>Privadas:</td>	
-								<td><input type="radio" name="organizacionesprivadas" value=1>SI <input type="radio" name="organizacionesprivadas" value=2>NO</td>
+								<td><input type="radio" name="organizacionesprivadas" value=1>01 Sí <input type="radio" name="organizacionesprivadas" value=2>02 No</td>
 							</tr>
 						</tbody>
 					</table>
@@ -782,19 +847,19 @@
 						<tbody>
 							<tr>
 								<td>Educativo:</td>
-								<td><input type="radio" name="organizacioneseducativo" value=1>SI <input type="radio" name="organizacioneseducativo" value=2>NO</td>
+								<td><input type="radio" name="organizacioneseducativo" value=1>01 Sí <input type="radio" name="organizacioneseducativo" value=2>02 No</td>
 							</tr>
 							<tr>
 								<td>Social:</td>
-								<td><input type="radio" name="organizacionessocial" value=1>SI <input type="radio" name="organizacionessocial" value=2>NO</td>
+								<td><input type="radio" name="organizacionessocial" value=1>01 Sí<input type="radio" name="organizacionessocial" value=2>02 No</td>
 							</tr>
 							<tr>
 								<td>Religioso:</td>
-								<td><input type="radio" name="organizacionesreligioso" value=1>SI <input type="radio" name="organizacionesreligioso" value=2>NO</td>
+								<td><input type="radio" name="organizacionesreligioso" value=1>01 Sí <input type="radio" name="organizacionesreligioso" value=2>02 No</td>
 							</tr>
 							<tr>
 								<td>político:</td>
-								<td><input type="radio" name="organizacionespolitico" value=1>SI <input type="radio" name="organizacionespolitico" value=2>NO</td>
+								<td><input type="radio" name="organizacionespolitico" value=1>01 Sí <input type="radio" name="organizacionespolitico" value=2>02 No</td>
 							</tr>
 						</tbody>
 					</table>
