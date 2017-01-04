@@ -22,4 +22,15 @@
 
 table{
 	margin: 0 auto;
+	border-spacing: 0px;
+}
+
+.table2 td, .table2 th{
+	border: 1px solid black;
+	padding : 4px;
+}
+
+
+input:focus{
+	outline: green 1px solid;
 }

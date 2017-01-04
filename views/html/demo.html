@@ -8,7 +8,7 @@
 	<body>
 		<div id="titleBody">
 			<h2>Cédula de Identificación de Interesados</h2>
-			<h3>Estrategia de Inclusión Productiva.</h3>
+			<h3>Estrategia de Inclusión Productiva</h3>
 		</div>
 		<br>
 		<br>
@@ -21,15 +21,15 @@
 					<tbody>
 						<tr>
 							<td>Fecha del levantamiento:</td>
-							<td><input type="date"></td>
+							<td><input type="date" class="form-control"></td>
 						</tr>
 						<tr>
 							<td>Clave Promotor:</td>
-							<td><input type="number"></td>
+							<td><input type="textarea" class="form-control"></td>
 						</tr>
 						<tr>
 							<td>Nombre del entrevistador:</td>
-							<td><input type="text" disabled></td>
+							<td><input type="text" class="form-control" disabled></td>
 						</tr>
 					</tbody>
 				</table>
@@ -45,38 +45,34 @@
 						<tr>
 							<td>Entidad Federativa:</td>
 							<td>
-								<select>
+								<select class="form-control mb-10">
 									<option value=0>Seleccione</option>	
 								</select>
 							</td>
-							<td>Clave: <input type="text" maxlength=2 disabled></td>
 						</tr>
 						<tr>
 							<td>Territorio:</td>
 							<td>
-								<select> 
+								<select class="form-control mb-10"> 
 									<option value=0>Seleccione</option>
 								</select>
 							</td>
-							<td>Clave: <input type="text" disabled></td>
 						</tr>
 						<tr>
 							<td>Municipio:</td>
 							<td>
-								<select>
+								<select class="form-control mb-10">
 									<option value=0>Seleccione</option>
 								</select>
 							</td>
-							<td>Clave: <input type="text" disabled></td>
 						</tr>
 						<tr>
 							<td>Localidad:</td>
 							<td>
-								<select>
+								<select class="form-control mb-10">
 									<option value=0>Seleccione</option>
 								</select>								
 							</td>
-							<td>Clave: <input type="text" disabled></td>
 						</tr>
 					</tbody>
 				</table>
@@ -94,8 +90,11 @@
 						</tr>
 						<tr>
 							<td colspan=2>
-								<input type="radio" name="esprospera" value=1>01 Sí 
-								<input type="radio" name="esprospera" value=2>02 No
+								<label class="checkbox checkbox-custom"> <input type="radio" name="esprospera" value=1> <i></i> 01 Sí  </label>
+				 				<label class="checkbox checkbox-custom"> <input type="radio" name="esprospera" value=2><i></i> 02 No </label>
+
+								
+								
 							</td>
 						</tr>
 						<tr>
@@ -103,25 +102,25 @@
 						</tr>
 						<tr>
 							
-							<td colspan=2><input type="text"></td>
+							<td colspan=2><input type="text" class="form-control"></td>
 							
 						</tr>
 
 						<tr style="border-top: 2px solid black;">
 							<td>Nombre(s):</td>
-							<td><input type="text"></td>
+							<td><input type="text" class="form-control"></td>
 						</tr>
 						<tr>
 							<td>Primer Apellido:</td>
-							<td><input type="text"></td>
+							<td><input type="text" class="form-control"></td>
 						</tr>
 						<tr>
 							<td>Segundo Apellido:</td>
-							<td><input type="text"></td>
+							<td><input type="text" class="form-control"></td>
 						</tr>
 						<tr>
 							<td>CURP:</td>
-							<td><input type="´text" maxlength="18"></td>
+							<td><input type="´text" class="form-control" maxlength="18"></td>
 						</tr>
 					</tbody>
 				</table>
@@ -131,27 +130,27 @@
 					<span>Documento oficial que presenta el informante para acreditar su identidad</span>
 				</div>
 				<div class="contentDiv">
-					<input type="radio" name="documentooficial" value=1>
-					01 Credencial para votar vigente
+					<label class="checkbox checkbox-custom"> <input type="radio" name="documentooficial" value=1> <i></i>
+					01 Credencial para votar vigente</label>
 					<br>
-					<input type="radio" name="documentooficial" value=2>02 Cartilla del Servicio Militar Nacional
+					<label class="checkbox checkbox-custom"> <input type="radio" name="documentooficial" value=2> <i></i> 02 Cartilla del Servicio Militar Nacional</label>
 					<br>
-					<input type="radio" name="documentooficial" value=3>03 Pasaporte Vigente  
+					<label class="checkbox checkbox-custom"> <input type="radio" name="documentooficial" value=3> <i></i> 03 Pasaporte Vigente  </label>
 					<br>
-					<input type="radio" name="documentooficial" value=4>04 Otra 
+					<label class="checkbox checkbox-custom"> <input type="radio" name="documentooficial" value=4> <i></i> 04 Otra </label>
 					<table>
 						<tbody>
 							<tr>
 								<td><b>Folio de la Identificacion</b>:</td>
-								<td><input type="text" maxlength="25"></td>
+								<td><input type="text" class="form-control" maxlength="25"></td>
 							</tr>
 							<tr>
 								<td>Dónde ubicarlo:</td>
-								<td><textarea></textarea></td>
+								<td><textarea class="form-control"></textarea></td>
 							</tr>
 							<tr>
 								<td>Teléfono:</td>
-								<td><input type="text" maxlength="20"></td>
+								<td><input type="text" class="form-control" maxlength="20"></td>
 							</tr>
 						</tbody>
 					</table>
@@ -167,21 +166,21 @@
 					<table>
 						<thead>
 							<tr>
-								<td colspan=2>1. A la semana ¿Cuántas horas le dedicas:</td>
+								<td colspan=2><strong>1. A la semana ¿Cuántas horas le dedicas:</strong></td>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>Al cuidado de tu familia:</td>
-								<td><input type="text" class="inputReducido" maxlength=2></td>
+								<td><input type="text" class="form-control" class="inputReducido" maxlength=2></td>
 							</tr>
 							<tr>
 								<td>Pata tí misma(o):</td>
-								<td><input type="text" class="inputReducido" maxlength=2></td>
+								<td><input type="text" class="form-control" class="inputReducido" maxlength=2></td>
 							</tr>
 							<tr>
 								<td>A las actividades de tu hogar:</td>
-								<td><input type="text" class="inputReducido" maxlength=2></td>
+								<td><input type="text" class="form-control" class="inputReducido" maxlength=2></td>
 							</tr>
 
 						</tbody>
@@ -190,36 +189,38 @@
 				<br>
 				<br>
 				<div>
-					<table>
+					<table class="table2">
 						<thead>
 							<tr>
-								<td colspan=5>
-									2. ¿Qué tanto decides sobre..
+								<th><strong>2. ¿Qué tanto decides sobre…</strong></th>
+								<th><strong>01 Nada |</strong></th>
+								<th><strong>02 Escasamente |</strong></th>
+								<th><strong>03 Regularmente |</strong></th>
+								<th><strong>04 Mucho</strong></th>
 								</td>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>Si puede trabajar</td>
-								<td><input type="radio" name="decidetrabajo" value=1>01 Nada</td>
-								<td><input type="radio" name="decidetrabajo" value=2>02 Escasamente</td>
-								<td><input type="radio" name="decidetrabajo" value=3>03 Regular</td>
-								<td><input type="radio" name="decidetrabajo" value=4>Mucho</td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="decidetrabajo" value=1> <i></i> </label></td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="decidetrabajo" value=2> <i></i> </label></td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="decidetrabajo" value=3> <i></i> </label></td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="decidetrabajo" value=4> <i></i> </label></td>
 							</tr>
 							<tr>
 								<td>Cómo manejar tu tiempo cada día</td>
-								<td><input type="radio" name="decidetiempo" value=1>01 Nada</td>
-								<td><input type="radio" name="decidetiempo" value=2>02 Escasamente</td>
-								<td><input type="radio" name="decidetiempo" value=3>03 Regular</td>
-								<td><input type="radio" name="decidetiempo" value=4>Mucho</td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="decidetiempo" value=1> <i></i> </label></td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="decidetiempo" value=2> <i></i> </label></td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="decidetiempo" value=3> <i></i> </label></td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="decidetiempo" value=4> <i></i> </label></td>
 							</tr>
 							<tr>
 								<td>Cómo se maneja el dinero en tu hogar</td>
-								<td><input type="radio" name="decidetiempo" value=1>01 Nada</td>
-								<td><input type="radio" name="decidetiempo" value=2>02 Escasamente</td>
-								<td><input type="radio" name="decidetiempo" value=3>03 Regular</td>
-								<td><input type="radio" name="decidetiempo" value=4>Mucho</td>
-							</tr>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="decidedinero" value=1> <i></i> </label></td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="decidedinero" value=2> <i></i> </label></td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="decidedinero" value=3> <i></i> </label></td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="decidedinero" value=4> <i></i> </label></td>
 						</tbody>
 					</table>    
 				</div>
@@ -234,10 +235,13 @@
 					<table>
 						<tbody>
 							<tr>
-								<td>3. Durante el mes pasado, ¿Usted trabajó?</td>
+								<td><strong>3. Durante el mes pasado, ¿Usted trabajó?</strong></td>
 							</tr>
 							<tr>
-								<td><input type="radio" name="ustedtrabajo" value=1>01 SI <input type="radio" name="ustedtrabajo" value=2>02 NO</td>
+								<td>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="ustedtrabajo" value=1> <i></i> 01 SI </label>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="ustedtrabajo" value=2> <i></i> 02 NO</label>
+								</td>
 							</tr>
 						</tbody>
 					</table>
@@ -247,17 +251,18 @@
 					<table>
 						<thead>
 							<tr>
-								<td>4. Independientemente de lo que me acaba de decir, ¿le dedicó el mes pasado al menos una hora a...</td>
+								<td><strong>4. Independientemente de lo que me acaba de decir, ¿le dedicó el mes pasado al menos una hora a…</strong></td>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>
-									<input type="radio" name="confirmacionempleo" value=1>01 ¿Realizar alguna actividad para obtener ingresos?  
+									<label class="checkbox checkbox-custom"> <input type="radio" name="confirmacionempleo" value=1> <i></i> 01 ¿Realizar alguna actividad para obtener ingresos?  </label>
 									<br>
-									<input type="radio" name="confirmacionempleo" value=2>02 Ayudar en las tierras o en el negocio de un familiar o de otra persona 
+									<label class="checkbox checkbox-custom"> <input type="radio" name="confirmacionempleo" value=2> <i></i> 02 Ayudar en las tierras o en el negocio de un familiar o de otra persona </label>
 									<br>
-									<input type="radio" name="confirmacionempleo" value=3>03 No trabajó el mes pasado</td>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="confirmacionempleo" value=3> <i></i> 03 No trabajó el mes pasado</label>
+								</td>
 							</tr>
 						</tbody>
 					</table>
@@ -268,13 +273,13 @@
 					<table>
 						<thead>
 							<tr>
-								<td colspan=2>5. En su trabajo principal del mes pasado, usted se desempeñó como:</td>
+								<td colspan=2><strong>5. En su trabajo principal del mes pasado, usted se desempeñó como:</strong></td>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>
-									<select>
+									<select class="form-control mb-10">
 										<option disabled selected value>---Seleccione---</option>
 										<option value=1>01 Ayudante</option>
 										<option value=2>02 Trabajador doméstico</option>
@@ -296,9 +301,9 @@
 					<table>
 						<tbody>
 							<tr>
-								<td>6. ¿A qué giro se dedica la empresa, negocio o constitución en la que trabajo o ayudó?</td>
+								<td><strong>6. ¿A qué giro se dedica la empresa, negocio o constitución en la que trabajo o ayudó?</strong></td>
 								<td>
-									<select>
+									<select class="form-control mb-10">
 										<option disabled selected value>---Seleccione---</option>
 										<option value=1>01 Agricultura</option>
 										<option value=2>02 Ganadería</option>
@@ -316,9 +321,9 @@
 					<table>
 						<tbody>
 							<tr>
-								<td>7. Amplie los detalles de la empresa o actividad</td>
+								<td><strong>7. Amplie los detalles de la empresa o actividad</strong></td>
 								<td>
-									<select>
+									<select class="form-control mb-10">
 										<option disabled selected value>---Seleccione---</option>
 										<option value=1> 01 Cultivo de frijol</option>
 										<option value=2> 02 Cultivo de maíz</option>
@@ -371,10 +376,13 @@
 					<table>
 						<tbody>
 							<tr>
-								<td>8. Además del trabajo que me acaba de mencionar, ¿Alguna otra actividad productiva que le genere ingresos?</td>
+								<td><strong>8. Además del trabajo que me acaba de mencionar, ¿Alguna otra actividad productiva que le genere ingresos?</strong></td>
 							</tr>
 							<tr>
-								<td><input type="radio" name="trabajosecundario" value=1>01 Sí <input type="radio" name="trabajosecundario" value=2>02 No</td>
+								<td>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="trabajosecundario" value=1> <i></i> 01 Sí </label>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="trabajosecundario" value=2> <i></i> 02 No </label>
+								</td>
 							</tr>
 						</tbody>
 					</table>
@@ -384,9 +392,9 @@
 					<table>
 						<tbody>
 							<tr>
-								<td>9. ¿A qué giro se dedica la empresa, negocio de esa actividad productiva? </td>
+								<td><strong>9. ¿A qué giro se dedica la empresa, negocio de esa actividad productiva? </strong></td>
 								<td>
-									<select>
+									<select class="form-control mb-10">
 										<option disabled selected value>---Seleccione---</option>
 										<option value=1>01 Agricultura</option>
 										<option value=2>02 Ganadería</option>
@@ -404,9 +412,9 @@
 					<table>
 						<thead>
 							<tr>
-								<td>10. Amplie los detalles de la empresa o actividad</td>
+								<td><strong>10. Amplie los detalles de la empresa o actividad</strong></td>
 								<td>
-<select>
+<select class="form-control mb-10">
 										<option disabled selected value>---Seleccione---</option>
 										<option value=1> 01 Cultivo de frijol</option>
 										<option value=2> 02 Cultivo de maíz</option>
@@ -458,10 +466,13 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td>11. En los últimos 5 años tuvo algún negocio o realizó alguna actividad productiva que le generara ingresos, como agricultura, cría de animales o producción de algún producto? </td>
+								<td><strong>11. En los últimos 5 años tuvo algún negocio o realizó alguna actividad productiva que le generara ingresos, como agricultura, cría de animales o producción de algún producto? </strong></td>
 							</tr>
 							<tr>
-								<td><input type="radio" name="experienciaproductiva" value=1>01 Sí <input type="radio" name="experienciaproductiva" value=2>02 No</td>
+								<td>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="experienciaproductiva" value=1> <i></i> 01 Sí </label> 
+									<label class="checkbox checkbox-custom"> <input type="radio" name="experienciaproductiva" value=2> <i></i> 02 No </label>
+								</td>
 							</tr>
 						</tbody>
 					</table>
@@ -471,9 +482,9 @@
 					<table>
 						<tbody>
 							<tr>
-								<td>12. ¿A qué giro se dedica la empresa, negocio de esa actividad productiva? </td>
+								<td><strong>12. ¿A qué giro se dedica la empresa, negocio de esa actividad productiva? </strong></td>
 								<td>
-									<select>
+									<select class="form-control mb-10">
 										<option disabled selected value>---Seleccione---</option>
 										<option value=1>01 Agricultura</option>
 										<option value=2>02 Ganadería</option>
@@ -491,9 +502,9 @@
 					<table>
 						<tbody>
 							<tr>
-								<td>13. Amplie los detalles de la empresa o actividad</td>
+								<td><strong>13. Amplie los detalles de la empresa o actividad</strong></td>
 								<td>
-									<select>
+									<select class="form-control mb-10">
 										<option disabled selected value>---Seleccione---</option>
 										<option value=1> 01 Cultivo de frijol</option>
 										<option value=2> 02 Cultivo de maíz</option>
@@ -540,27 +551,24 @@
 					<table>
 						<thead>
 							<tr>
-								<td>14. Le gustaría fortalecer por medio de su participación activa...</td>
-							</tr>
-							<tr>
-								<td>(Recuerde en cada caso la actividad que el entrevistado menciono)</td>
+								<td><strong>14. Le gustaría fortalecer por medio de su participación activa…</strong></td>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td><input type="radio" name="fortalecimiento_interes" value=1>01 Su actividad principal</td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="fortalecimiento_interes" value=1> <i></i> 01 Su actividad principal </label> </td>
 							</tr>
 							<tr>
-								<td><input type="radio" name="fortalecimiento_interes" value=2>02 Su actividad productiva secundaria</td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="fortalecimiento_interes" value=2> <i></i> 02 Su actividad productiva secundaria </label> </td>
 							</tr>
 							<tr>
-								<td><input type="radio" name="fortalecimiento_interes" value=3>03 Actividad con esperiencia</td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="fortalecimiento_interes" value=3> <i></i> 03 Actividad con esperiencia </label> </td>
 							</tr>
 							<tr>
-								<td><input type="radio" name="fortalecimiento_interes" value=4>04 Comenzar un nuevo proyecto distinto</td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="fortalecimiento_interes" value=4> <i></i> 04 Comenzar un nuevo proyecto distinto </label> </td>
 							</tr>
 							<tr>
-								<td><input type="radio" name="fortalecimiento_interes" value=5>05 No le interesa fortalecer alguna actividad</td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="fortalecimiento_interes" value=5> <i></i> 05 No le interesa fortalecer alguna actividad </label> </td>
 							</tr>
 						</tbody>
 					</table>      
@@ -570,9 +578,9 @@
 					<table>
 						<tbody>
 							<tr>
-								<td>15. ¿A qué giro se dedicaría en le nuevo proyecto que se desea realizar? </td>
+								<td><strong>15. ¿A qué giro se dedicaría en le nuevo proyecto que se desea realizar? </strong></td>
 								<td>
-									<select>
+									<select class="form-control mb-10">
 										<option disabled selected value>---Seleccione---</option>
 										<option value=1>01 Agricultura</option>
 										<option value=2>02 Ganadería</option>
@@ -590,9 +598,9 @@
 					<table>
 						<tbody>
 							<tr>
-								<td>16. Amplie los detalles de la empresa o actividad</td>
+								<td><strong>16. Amplie los detalles de la empresa o actividad</strong></td>
 								<td>
-									<select>
+									<select class="form-control mb-10">
 										<option disabled selected value>---Seleccione---</option>
 										<option value=1> 01 Cultivo de frijol</option>
 										<option value=2> 02 Cultivo de maíz</option>
@@ -636,47 +644,47 @@
 				</div>
 				<br>
 				<div>
-					<table style="border: 1px solid black;">
+					<table style="border: 1px solid black;" class="table2">
 						<thead>
 							<tr>
-								<th >17. Cuenta con las siguientes capacidades para emnpezar o fortalecer su actividad</th>
-								<th > <b>|01 SÍ</b></th>
-								<th > <b>|02 NO</b></th>
-								<th > <b>|03 NO APLICA|</b></th>
+								<th><strong>17. Cuenta con las siguientes capacidades para emnpezar o fortalecer su actividad</strong></th>
+								<th> <b>|01 SÍ</b></th>
+								<th> <b>|02 NO</b></th>
+								<th> <b>|03 NO APLICA|</b></th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>Conocimientos técnicos:</td>
-								<td><input type="radio" name="conocimientos" value="1"></td>
-								<td><input type="radio" name="conocimientos" value="2"></td>
-								<td><input type="radio" name="conocimientos" value="3"></td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="conocimientos" value="1"> <i></i> </label></td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="conocimientos" value="2"> <i></i> </label></td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="conocimientos" value="3"> <i></i> </label></td>
 
 							</tr>
 							<tr>
 								<td>Terreno Instalaciones o local:</td>
-								<td><input type="radio" name="terreno" value="1"></td>
-								<td><input type="radio" name="terreno" value="2"></td>
-								<td><input type="radio" name="terreno" value="3"></td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="terreno" value="1"> <i></i> </label></td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="terreno" value="2"> <i></i> </label></td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="terreno" value="3"> <i></i> </label></td>
 
 							</tr>
 							<tr>
 								<td>Insumos, materia prima y/o animales:</td>
-								<td><input type="radio" name="insumos" value="1"></td>
-								<td><input type="radio" name="insumos" value="2"></td>
-								<td><input type="radio" name="insumos" value="3"></td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="insumos" value="1"> <i></i> </label></td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="insumos" value="2"> <i></i> </label></td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="insumos" value="3"> <i></i> </label></td>
 							</tr>
 							<tr>
 								<td>Equipo y/o herramienta:</td>
-								<td><input type="radio" name="equipo" value="1"></td>
-								<td><input type="radio" name="equipo" value="2"></td>
-								<td><input type="radio" name="equipo" value="3"></td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="equipo" value="1"> <i></i> </label></td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="equipo" value="2"> <i></i> </label></td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="equipo" value="3"> <i></i> </label></td>
 							</tr>
 							<tr>
 								<td>Mobiliario:</td>
-								<td><input type="radio" name="mobiliario" value="1"></td>
-								<td><input type="radio" name="mobiliario" value="2"></td>
-								<td><input type="radio" name="mobiliario" value="3"></td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="mobiliario" value="1"> <i></i> </label></td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="mobiliario" value="2"> <i></i> </label></td>
+								<td><label class="checkbox checkbox-custom"> <input type="radio" name="mobiliario" value="3"> <i></i> </label></td>
 							</tr>
 						</tbody>
 					</table>
@@ -686,22 +694,25 @@
 					<table>
 						<tbody>
 							<tr>
-								<td>18. Ha recibido apoyo para alguna actividad productiva:</td>
+								<td><strong>18. Ha recibido apoyo para alguna actividad productiva:</strong></td>
 							</tr>
 							<tr>
-								<td><input type="radio" name="apoyorecibido" value=1>Sí <input type="radio" name="apoyorecibido" value=2>No</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<br>
-				<div>
-					<table>
-						<tbody>
-							<tr>
-								<td>19. ¿Qué instancia le proporcionó el apoyo para su actividad productiva?</td>
 								<td>
-									<select>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="apoyorecibido" value=1> <i></i> 01 Sí </label>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="apoyorecibido" value=2> <i></i> 02 No </label>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<div>
+					<table>
+						<tbody>
+							<tr>
+								<td class=""> <strong>19. ¿Qué instancia le proporcionó el apoyo para su actividad productiva?</strong></td>
+								<td>
+									<select class="form-control mb-10">
 										<option value=0>Seleccione</option>
 										<option value=1>01 Gobierno</option>
 										<option value=2>02 Social-Solidarias</option>
@@ -717,9 +728,9 @@
 					<table>
 						<tbody>
 							<tr>
-								<td>20. ¿De qué programa recibió apoyo? Categorice según catálogo de programas </td>
+								<td><strong>20. ¿De qué programa recibió apoyo? Categorice según catálogo de programas </strong></td>
 								<td>
-									<select>
+									<select class="form-control mb-10">
 										<option disabled selected value>---Seleccione---</option>
 										<option value=1> 01 FAPPA</option>
 										<option value=2> 02 ARRAIGATE</option>
@@ -746,7 +757,7 @@
 					<table>
 						<tbody>
 							<tr>
-								<td>21. ¿En qué año recibió el último apoyo para su actividad productiva?</td>
+								<td><strong>21. ¿En qué año recibió el último apoyo para su actividad productiva?</strong></td>
 								<td><input type="number" ></td>
 							</tr>
 						</tbody>
@@ -757,33 +768,39 @@
 					<table>
 						<tbody>
 							<tr>
-								<td>22. ¿El apoyo fue para el proyecto que desea fortalecer?</td>
+								<td><strong>22. ¿El apoyo fue para el proyecto que desea fortalecer?</strong></td>
 							</tr>
 							<tr>
-								<td><input type="radio" name="apoyoalinteres" value=1>01 Sí <input type="radio" name="apoyoalinteres" value=2>02 No</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<br>
-				<div>
-					<table>
-						<tbody>
-							<tr>
-								<td>23. ¿Has recibido algún crédito para la actividad productiva?</td>
-								<td><input type="radio" name="creditorecibido" value=1>01 Sí <input type="radio" name="creditorecibido" value=2>02 No</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<br>
-				<div>
-					<table>
-						<tbody>
-							<tr>
-								<td>24. ¿Qué instancia le proporcionó el crédito para su actividad productiva?</td>
 								<td>
-									<select>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="apoyoalinteres" value=1> <i></i> 01 Sí </label>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="apoyoalinteres" value=2> <i></i> 02 No </label>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<div>
+					<table>
+						<tbody>
+							<tr>
+								<td><strong>23. ¿Has recibido algún crédito para la actividad productiva?</strong></td>
+								<td>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="creditorecibido" value=1> <i></i> 01 Sí </label>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="creditorecibido" value=2> <i></i> 02 No </label>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<div>
+					<table>
+						<tbody>
+							<tr>
+								<td><strong>24. ¿Qué instancia le proporcionó el crédito para su actividad productiva?</td>
+								<td>
+									<select class="form-control mb-10">
 										<option disabled selected value>---Seleccione---</option>
 										<option value=1>01 Gobierno</option>
 										<option value=2>02 Social-Solidarias</option>
@@ -799,9 +816,9 @@
 					<table>
 						<tbody>
 							<tr>
-								<td>25. ¿Cuál es la situación del pago de su crédito? </td>
+								<td><strong>25. ¿Cuál es la situación del pago de su crédito? </td>
 								<td>
-									<select>
+									<select class="form-control mb-10">
 										<option disabled selected value>---Seleccione---</option>
 										<option value=1>01 Pagada</option>
 										<option value=2>02 Con pagos atrasados</option>
@@ -814,52 +831,73 @@
 				</div>
 				<br>
 				<div>
-					<table>
+					<table class="table2">
 						<thead>
 							<tr>
-								<td>26. ¿Ha participado en organizaciones productivas de...</td>
+								<td colspan="2"><strong>26. ¿Ha participado en organizaciones productivas de…</strong></td>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>De gobierno:</td>
-								<td><input type="radio" name="organizacionesgobierno" value=1>01 Sí <input type="radio" name="organizacionesgobierno" value=2>02 No</td>
+								<td>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="organizacionesgobierno" value=1> <i></i> 01 Sí </label>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="organizacionesgobierno" value=2> <i></i> 02 No </label>
+								</td>
 							</tr>
 							<tr>
 								<td>Sociales:</td>	
-								<td><input type="radio" name="organizacionessociales" value=1>Sí <input type="radio" name="organizacionessociales" value=2>No</td>
+								<td>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="organizacionessociales" value=1><i></i>01 Sí </label>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="organizacionessociales" value=2><i></i>02 No </label>
+								</td>
 							</tr>
 							<tr>
 								<td>Privadas:</td>	
-								<td><input type="radio" name="organizacionesprivadas" value=1>01 Sí <input type="radio" name="organizacionesprivadas" value=2>02 No</td>
+								<td>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="organizacionesprivadas" value=1> <i></i> 01 Sí </label>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="organizacionesprivadas" value=2> <i></i> 02 No </label>
+								</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
 				<br>
 				<div>
-					<table>
+					<table class="table2">
 						<thead>
 							<tr>
-								<td>27. cuenta ustede con alguna experiencia organizativa en lo...</td>
+								<td colspan="2"><strong>27. cuenta ustede con alguna experiencia organizativa en lo…</strong></td>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>Educativo:</td>
-								<td><input type="radio" name="organizacioneseducativo" value=1>01 Sí <input type="radio" name="organizacioneseducativo" value=2>02 No</td>
+								<td>Educativo:</td>	
+								<td>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="organizacioneseducativo" value=1> <i></i> 01 Sí </label>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="organizacioneseducativo" value=2> <i></i> 02 No </label>
+								</td>
 							</tr>
 							<tr>
-								<td>Social:</td>
-								<td><input type="radio" name="organizacionessocial" value=1>01 Sí<input type="radio" name="organizacionessocial" value=2>02 No</td>
+								<td>Social:</td>	
+								<td>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="organizacionessocial" value=1> <i></i> 01 Sí  </label>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="organizacionessocial" value=2> <i></i> 02 No  </label>
+								</td>
 							</tr>
 							<tr>
-								<td>Religioso:</td>
-								<td><input type="radio" name="organizacionesreligioso" value=1>01 Sí <input type="radio" name="organizacionesreligioso" value=2>02 No</td>
+								<td>Religioso:</td>	
+								<td>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="organizacionesreligioso" value=1> <i></i> 01 Sí  </label>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="organizacionesreligioso" value=2> <i></i> 02 No </label>
+								</td>
 							</tr>
 							<tr>
-								<td>político:</td>
-								<td><input type="radio" name="organizacionespolitico" value=1>01 Sí <input type="radio" name="organizacionespolitico" value=2>02 No</td>
+								<td>Político:</td>	
+								<td>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="organizacionespolitico" value=1> <i></i> 01 Sí  </label>
+									<label class="checkbox checkbox-custom"> <input type="radio" name="organizacionespolitico" value=2> <i></i> 02 No </label>
+								</td>
 							</tr>
 						</tbody>
 					</table>
@@ -869,7 +907,7 @@
 				 	<table>
 				 		<thead>
 				 			<tr>
-				 				<td colspan=4>28.¿Me podría contar un poco más acerca de su experiencia oprganizativa?</td>
+				 				<td colspan=4><strong>28.¿Me podría contar un poco más acerca de su experiencia oprganizativa?</strong></td>
 				 			</tr>
 				 			<tr>
 				 				<td colspan=4>Categorice las respuestas que vaya identificando <b>|01 Educativo| |Social 02| |Religioso 03| |Productivo 04|</b></td>
@@ -884,19 +922,19 @@
 				 		<tbody>
 				 			<tr>
 				 				<td>Organización 1</td>
-				 				<td><input type="text" maxlength=2 class="pregunta28 inputReducido"></td>
+				 				<td><input type="text" class="form-control" maxlength=2 class="pregunta28 inputReducido"></td>
 				 				<td><textarea class="pregunta28"></textarea></td>
 				 				<td><textarea class="pregunta28"></textarea></td>
 				 			</tr>
 				 			<tr>
 				 				<td>Organización 2</td>
-				 				<td><input type="text" maxlength=2 class="pregunta28 inputReducido"></td>
+				 				<td><input type="text" class="form-control" maxlength=2 class="pregunta28 inputReducido"></td>
 				 				<td><textarea class="pregunta28"></textarea></td>
 				 				<td><textarea class="pregunta28"></textarea></td>
 				 			</tr>
 				 			<tr>
 				 				<td>Organización 3</td>
-				 				<td><input type="text" maxlength=2 class="pregunta28 inputReducido"></td>
+				 				<td><input type="text" class="form-control" maxlength=2 class="pregunta28 inputReducido"></td>
 				 				<td><textarea class="pregunta28"></textarea></td>
 				 				<td><textarea class="pregunta28"></textarea></td>
 				 			</tr>
@@ -906,5 +944,6 @@
 			</div>
 		</div>
 		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</body>
 </html>
